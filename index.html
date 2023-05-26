@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Attaching the File of CSS (Style.css) -->
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+  </head>
+
+  <body>
+   <!-- Creating a Trello Form - Router -> create-card via POST Method -->
+    <form id="trelloForm" action="create-card" method="POST">
+      <h1>Trello Card Form</h1>
+
+      <p>Name</p>
+      <input type="text" id="name" name="name" required />
+
+      <p>Description</p>
+      <textarea id="description" name="description" required></textarea>
+
+      <p>Start Date</p>
+      <input type="date" id="startDate" name="startDate" required />
+
+      <p>Due Date</p>
+      <input type="date" id="dueDate" name="dueDate" required />
+
+      <!-- When User Click on Submit Button Data will adding in the trello board -->
+      <input type="submit" value="Create Card" />
+    </form>
+  </body>
+</html>
